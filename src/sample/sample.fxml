@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450" prefWidth="1164.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Canvas fx:id="mainCanvas" height="444.0" layoutY="3.0" onMouseDragged="#onMouseCanvas" onMousePressed="#onMouseClick" width="569.0" />
+      <Slider fx:id="sidW1" layoutX="577.0" layoutY="100.0" majorTickUnit="1.0" max="4.0" min="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="2.0" />
+      <Slider fx:id="sidW2" layoutX="577.0" layoutY="160.0" majorTickUnit="0.5" max="3.0" min="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="sidH" layoutX="577.0" layoutY="223.0" majorTickUnit="0.5" max="4.0" min="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="2.0" />
+      <Slider fx:id="sidR" layoutX="577.0" layoutY="290.0" majorTickUnit="0.5" max="3.0" min="0.5" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="1.0" />
+      <Label layoutX="584.0" layoutY="73.0" text="W1" />
+      <Label layoutX="584.0" layoutY="137.0" text="W2" />
+      <Label layoutX="584.0" layoutY="198.0" text="H" />
+      <Label layoutX="583.0" layoutY="264.0" text="Радиус" />
+      <Slider fx:id="sidZoom" layoutX="577.0" layoutY="35.0" majorTickUnit="19.0" max="200.0" min="10.0" minorTickCount="19" showTickLabels="true" showTickMarks="true" value="100.0" />
+      <TableView fx:id="tblOutput" layoutX="732.0" layoutY="19.0" prefHeight="165.0" prefWidth="430.0">
+          <columns>
+              <TableColumn fx:id="columnX" prefWidth="75.0" text="X" />
+              <TableColumn fx:id="columnY" prefWidth="75.0" text="Y" />
+          </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
